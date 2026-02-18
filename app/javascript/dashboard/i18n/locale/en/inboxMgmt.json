@@ -485,6 +485,10 @@
           "VOICE": {
             "TITLE": "Voice",
             "DESCRIPTION": "Integrate with Twilio Voice"
+          },
+          "VK": {
+            "TITLE": "VK",
+            "DESCRIPTION": "Connect your VK community messages"
           }
         }
       },
@@ -519,6 +523,36 @@
         "SIGN_IN": "Sign in with Google",
         "EMAIL_PLACEHOLDER": "Enter email address",
         "ERROR_MESSAGE": "There was an error connecting to Google, please try again"
+      },
+      "VK_CHANNEL": {
+        "TITLE": "VK Channel",
+        "DESC": "Integrate VK and support customers from your VK community messages.",
+        "CHANNEL_NAME": {
+          "LABEL": "Channel Name",
+          "PLACEHOLDER": "Please enter a channel name",
+          "ERROR": "This field is required"
+        },
+        "GROUP_ID": {
+          "LABEL": "VK Group ID",
+          "PLACEHOLDER": "VK Group ID (community id)"
+        },
+        "ACCESS_TOKEN": {
+          "LABEL": "Access Token",
+          "PLACEHOLDER": "VK community access token"
+        },
+        "CALLBACK_SECRET": {
+          "LABEL": "Callback Secret",
+          "PLACEHOLDER": "Secret key from VK Callback API settings"
+        },
+        "CONFIRMATION_CODE": {
+          "LABEL": "Confirmation Code",
+          "PLACEHOLDER": "Confirmation string from VK Callback API",
+          "SUBTITLE": "Chatwoot will return this code when VK sends a confirmation event."
+        },
+        "SUBMIT_BUTTON": "Create VK Channel",
+        "API": {
+          "ERROR_MESSAGE": "We were not able to save the VK channel"
+        }
       }
     },
     "DETAILS": {

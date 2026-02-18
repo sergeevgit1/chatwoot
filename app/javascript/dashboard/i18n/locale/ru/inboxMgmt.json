@@ -485,6 +485,10 @@
           "VOICE": {
             "TITLE": "Голосовая связь",
             "DESCRIPTION": "Интегрировать Twilio Voice"
+          },
+          "VK": {
+            "TITLE": "VK",
+            "DESCRIPTION": "Подключите сообщения сообщества VK"
           }
         }
       },
@@ -519,6 +523,36 @@
         "SIGN_IN": "Войти с помощью Google",
         "EMAIL_PLACEHOLDER": "Введите адрес электронной почты",
         "ERROR_MESSAGE": "Произошла ошибка при подключении к Google, пожалуйста, попробуйте еще раз"
+      },
+      "VK_CHANNEL": {
+        "TITLE": "Канал VK",
+        "DESC": "Подключите VK и обрабатывайте сообщения из сообщества VK в Chatwoot.",
+        "CHANNEL_NAME": {
+          "LABEL": "Название канала",
+          "PLACEHOLDER": "Введите название канала",
+          "ERROR": "Это поле обязательно"
+        },
+        "GROUP_ID": {
+          "LABEL": "ID сообщества VK",
+          "PLACEHOLDER": "ID сообщества VK"
+        },
+        "ACCESS_TOKEN": {
+          "LABEL": "Access Token",
+          "PLACEHOLDER": "Токен доступа сообщества VK"
+        },
+        "CALLBACK_SECRET": {
+          "LABEL": "Callback Secret",
+          "PLACEHOLDER": "Секретный ключ из настроек Callback API VK"
+        },
+        "CONFIRMATION_CODE": {
+          "LABEL": "Confirmation Code",
+          "PLACEHOLDER": "Строка подтверждения из Callback API VK",
+          "SUBTITLE": "Chatwoot вернет этот код, когда VK отправит событие confirmation."
+        },
+        "SUBMIT_BUTTON": "Создать канал VK",
+        "API": {
+          "ERROR_MESSAGE": "Не удалось сохранить канал VK"
+        }
       }
     },
     "DETAILS": {
