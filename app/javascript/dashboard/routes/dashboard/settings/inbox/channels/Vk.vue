@@ -64,7 +64,8 @@ export default {
         });
       } catch (error) {
         useAlert(
-          error.message || this.$t('INBOX_MGMT.ADD.VK_CHANNEL.API.ERROR_MESSAGE')
+          error.message ||
+            this.$t('INBOX_MGMT.ADD.VK_CHANNEL.API.ERROR_MESSAGE')
         );
       }
     },
@@ -79,14 +80,19 @@ export default {
       :header-content="$t('INBOX_MGMT.ADD.VK_CHANNEL.DESC')"
     />
 
-    <form class="flex flex-wrap flex-col mx-0" @submit.prevent="createChannel()">
+    <form
+      class="flex flex-wrap flex-col mx-0"
+      @submit.prevent="createChannel()"
+    >
       <div class="flex-shrink-0 flex-grow-0">
         <label :class="{ error: v$.channelName.$error }">
           {{ $t('INBOX_MGMT.ADD.VK_CHANNEL.CHANNEL_NAME.LABEL') }}
           <input
             v-model="channelName"
             type="text"
-            :placeholder="$t('INBOX_MGMT.ADD.VK_CHANNEL.CHANNEL_NAME.PLACEHOLDER')"
+            :placeholder="
+              $t('INBOX_MGMT.ADD.VK_CHANNEL.CHANNEL_NAME.PLACEHOLDER')
+            "
             @blur="v$.channelName.$touch"
           />
         </label>
@@ -110,7 +116,9 @@ export default {
           <input
             v-model="accessToken"
             type="password"
-            :placeholder="$t('INBOX_MGMT.ADD.VK_CHANNEL.ACCESS_TOKEN.PLACEHOLDER')"
+            :placeholder="
+              $t('INBOX_MGMT.ADD.VK_CHANNEL.ACCESS_TOKEN.PLACEHOLDER')
+            "
             @blur="v$.accessToken.$touch"
           />
         </label>
@@ -122,7 +130,9 @@ export default {
           <input
             v-model="callbackSecret"
             type="password"
-            :placeholder="$t('INBOX_MGMT.ADD.VK_CHANNEL.CALLBACK_SECRET.PLACEHOLDER')"
+            :placeholder="
+              $t('INBOX_MGMT.ADD.VK_CHANNEL.CALLBACK_SECRET.PLACEHOLDER')
+            "
             @blur="v$.callbackSecret.$touch"
           />
         </label>
